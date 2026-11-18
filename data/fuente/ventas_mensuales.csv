@@ -1,0 +1,301 @@
+producto,mes,t,unidades
+Leche 1L,2021-01-01,1,817
+Leche 1L,2021-02-01,2,852
+Leche 1L,2021-03-01,3,905
+Leche 1L,2021-04-01,4,1004
+Leche 1L,2021-05-01,5,992
+Leche 1L,2021-06-01,6,927
+Leche 1L,2021-07-01,7,1028
+Leche 1L,2021-08-01,8,963
+Leche 1L,2021-09-01,9,923
+Leche 1L,2021-10-01,10,900
+Leche 1L,2021-11-01,11,876
+Leche 1L,2021-12-01,12,923
+Leche 1L,2022-01-01,13,909
+Leche 1L,2022-02-01,14,915
+Leche 1L,2022-03-01,15,916
+Leche 1L,2022-04-01,16,951
+Leche 1L,2022-05-01,17,1067
+Leche 1L,2022-06-01,18,1148
+Leche 1L,2022-07-01,19,1063
+Leche 1L,2022-08-01,20,1023
+Leche 1L,2022-09-01,21,1016
+Leche 1L,2022-10-01,22,851
+Leche 1L,2022-11-01,23,887
+Leche 1L,2022-12-01,24,926
+Leche 1L,2023-01-01,25,966
+Leche 1L,2023-02-01,26,939
+Leche 1L,2023-03-01,27,1031
+Leche 1L,2023-04-01,28,1077
+Leche 1L,2023-05-01,29,1151
+Leche 1L,2023-06-01,30,1055
+Leche 1L,2023-07-01,31,1147
+Leche 1L,2023-08-01,32,989
+Leche 1L,2023-09-01,33,875
+Leche 1L,2023-10-01,34,948
+Leche 1L,2023-11-01,35,895
+Leche 1L,2023-12-01,36,992
+Leche 1L,2024-01-01,37,997
+Leche 1L,2024-02-01,38,926
+Leche 1L,2024-03-01,39,1107
+Leche 1L,2024-04-01,40,1053
+Leche 1L,2024-05-01,41,1151
+Leche 1L,2024-06-01,42,1157
+Leche 1L,2024-07-01,43,1172
+Leche 1L,2024-08-01,44,1179
+Leche 1L,2024-09-01,45,1118
+Leche 1L,2024-10-01,46,1051
+Leche 1L,2024-11-01,47,1033
+Leche 1L,2024-12-01,48,1012
+Leche 1L,2025-01-01,49,963
+Leche 1L,2025-02-01,50,1002
+Leche 1L,2025-03-01,51,1076
+Leche 1L,2025-04-01,52,1193
+Leche 1L,2025-05-01,53,1193
+Leche 1L,2025-06-01,54,1368
+Leche 1L,2025-07-01,55,1168
+Leche 1L,2025-08-01,56,1114
+Leche 1L,2025-09-01,57,1174
+Leche 1L,2025-10-01,58,1161
+Leche 1L,2025-11-01,59,1068
+Leche 1L,2025-12-01,60,1076
+Cafe molido,2021-01-01,1,351
+Cafe molido,2021-02-01,2,353
+Cafe molido,2021-03-01,3,373
+Cafe molido,2021-04-01,4,450
+Cafe molido,2021-05-01,5,529
+Cafe molido,2021-06-01,6,486
+Cafe molido,2021-07-01,7,513
+Cafe molido,2021-08-01,8,483
+Cafe molido,2021-09-01,9,419
+Cafe molido,2021-10-01,10,394
+Cafe molido,2021-11-01,11,462
+Cafe molido,2021-12-01,12,494
+Cafe molido,2022-01-01,13,359
+Cafe molido,2022-02-01,14,372
+Cafe molido,2022-03-01,15,431
+Cafe molido,2022-04-01,16,483
+Cafe molido,2022-05-01,17,572
+Cafe molido,2022-06-01,18,553
+Cafe molido,2022-07-01,19,554
+Cafe molido,2022-08-01,20,536
+Cafe molido,2022-09-01,21,445
+Cafe molido,2022-10-01,22,400
+Cafe molido,2022-11-01,23,439
+Cafe molido,2022-12-01,24,445
+Cafe molido,2023-01-01,25,358
+Cafe molido,2023-02-01,26,429
+Cafe molido,2023-03-01,27,511
+Cafe molido,2023-04-01,28,544
+Cafe molido,2023-05-01,29,599
+Cafe molido,2023-06-01,30,617
+Cafe molido,2023-07-01,31,627
+Cafe molido,2023-08-01,32,580
+Cafe molido,2023-09-01,33,506
+Cafe molido,2023-10-01,34,414
+Cafe molido,2023-11-01,35,544
+Cafe molido,2023-12-01,36,518
+Cafe molido,2024-01-01,37,431
+Cafe molido,2024-02-01,38,449
+Cafe molido,2024-03-01,39,566
+Cafe molido,2024-04-01,40,576
+Cafe molido,2024-05-01,41,676
+Cafe molido,2024-06-01,42,660
+Cafe molido,2024-07-01,43,631
+Cafe molido,2024-08-01,44,570
+Cafe molido,2024-09-01,45,531
+Cafe molido,2024-10-01,46,506
+Cafe molido,2024-11-01,47,580
+Cafe molido,2024-12-01,48,561
+Cafe molido,2025-01-01,49,369
+Cafe molido,2025-02-01,50,499
+Cafe molido,2025-03-01,51,567
+Cafe molido,2025-04-01,52,612
+Cafe molido,2025-05-01,53,664
+Cafe molido,2025-06-01,54,702
+Cafe molido,2025-07-01,55,730
+Cafe molido,2025-08-01,56,613
+Cafe molido,2025-09-01,57,560
+Cafe molido,2025-10-01,58,536
+Cafe molido,2025-11-01,59,585
+Cafe molido,2025-12-01,60,571
+Helado,2021-01-01,1,148
+Helado,2021-02-01,2,175
+Helado,2021-03-01,3,311
+Helado,2021-04-01,4,362
+Helado,2021-05-01,5,494
+Helado,2021-06-01,6,494
+Helado,2021-07-01,7,540
+Helado,2021-08-01,8,414
+Helado,2021-09-01,9,354
+Helado,2021-10-01,10,181
+Helado,2021-11-01,11,148
+Helado,2021-12-01,12,137
+Helado,2022-01-01,13,206
+Helado,2022-02-01,14,174
+Helado,2022-03-01,15,352
+Helado,2022-04-01,16,439
+Helado,2022-05-01,17,541
+Helado,2022-06-01,18,545
+Helado,2022-07-01,19,501
+Helado,2022-08-01,20,413
+Helado,2022-09-01,21,294
+Helado,2022-10-01,22,239
+Helado,2022-11-01,23,155
+Helado,2022-12-01,24,195
+Helado,2023-01-01,25,144
+Helado,2023-02-01,26,247
+Helado,2023-03-01,27,293
+Helado,2023-04-01,28,433
+Helado,2023-05-01,29,530
+Helado,2023-06-01,30,577
+Helado,2023-07-01,31,570
+Helado,2023-08-01,32,451
+Helado,2023-09-01,33,316
+Helado,2023-10-01,34,259
+Helado,2023-11-01,35,185
+Helado,2023-12-01,36,156
+Helado,2024-01-01,37,150
+Helado,2024-02-01,38,284
+Helado,2024-03-01,39,361
+Helado,2024-04-01,40,489
+Helado,2024-05-01,41,588
+Helado,2024-06-01,42,599
+Helado,2024-07-01,43,562
+Helado,2024-08-01,44,540
+Helado,2024-09-01,45,375
+Helado,2024-10-01,46,249
+Helado,2024-11-01,47,181
+Helado,2024-12-01,48,193
+Helado,2025-01-01,49,183
+Helado,2025-02-01,50,278
+Helado,2025-03-01,51,412
+Helado,2025-04-01,52,476
+Helado,2025-05-01,53,525
+Helado,2025-06-01,54,619
+Helado,2025-07-01,55,588
+Helado,2025-08-01,56,481
+Helado,2025-09-01,57,412
+Helado,2025-10-01,58,289
+Helado,2025-11-01,59,157
+Helado,2025-12-01,60,172
+Pan de caja,2021-01-01,1,646
+Pan de caja,2021-02-01,2,617
+Pan de caja,2021-03-01,3,724
+Pan de caja,2021-04-01,4,735
+Pan de caja,2021-05-01,5,729
+Pan de caja,2021-06-01,6,790
+Pan de caja,2021-07-01,7,783
+Pan de caja,2021-08-01,8,722
+Pan de caja,2021-09-01,9,734
+Pan de caja,2021-10-01,10,732
+Pan de caja,2021-11-01,11,643
+Pan de caja,2021-12-01,12,681
+Pan de caja,2022-01-01,13,676
+Pan de caja,2022-02-01,14,790
+Pan de caja,2022-03-01,15,656
+Pan de caja,2022-04-01,16,789
+Pan de caja,2022-05-01,17,773
+Pan de caja,2022-06-01,18,791
+Pan de caja,2022-07-01,19,865
+Pan de caja,2022-08-01,20,769
+Pan de caja,2022-09-01,21,832
+Pan de caja,2022-10-01,22,697
+Pan de caja,2022-11-01,23,708
+Pan de caja,2022-12-01,24,669
+Pan de caja,2023-01-01,25,670
+Pan de caja,2023-02-01,26,724
+Pan de caja,2023-03-01,27,743
+Pan de caja,2023-04-01,28,794
+Pan de caja,2023-05-01,29,726
+Pan de caja,2023-06-01,30,901
+Pan de caja,2023-07-01,31,808
+Pan de caja,2023-08-01,32,864
+Pan de caja,2023-09-01,33,726
+Pan de caja,2023-10-01,34,749
+Pan de caja,2023-11-01,35,843
+Pan de caja,2023-12-01,36,675
+Pan de caja,2024-01-01,37,661
+Pan de caja,2024-02-01,38,723
+Pan de caja,2024-03-01,39,797
+Pan de caja,2024-04-01,40,839
+Pan de caja,2024-05-01,41,888
+Pan de caja,2024-06-01,42,836
+Pan de caja,2024-07-01,43,776
+Pan de caja,2024-08-01,44,802
+Pan de caja,2024-09-01,45,840
+Pan de caja,2024-10-01,46,779
+Pan de caja,2024-11-01,47,661
+Pan de caja,2024-12-01,48,731
+Pan de caja,2025-01-01,49,799
+Pan de caja,2025-02-01,50,853
+Pan de caja,2025-03-01,51,824
+Pan de caja,2025-04-01,52,849
+Pan de caja,2025-05-01,53,812
+Pan de caja,2025-06-01,54,839
+Pan de caja,2025-07-01,55,868
+Pan de caja,2025-08-01,56,865
+Pan de caja,2025-09-01,57,837
+Pan de caja,2025-10-01,58,764
+Pan de caja,2025-11-01,59,715
+Pan de caja,2025-12-01,60,723
+Bebida energetica,2021-01-01,1,200
+Bebida energetica,2021-02-01,2,255
+Bebida energetica,2021-03-01,3,222
+Bebida energetica,2021-04-01,4,288
+Bebida energetica,2021-05-01,5,325
+Bebida energetica,2021-06-01,6,359
+Bebida energetica,2021-07-01,7,331
+Bebida energetica,2021-08-01,8,340
+Bebida energetica,2021-09-01,9,296
+Bebida energetica,2021-10-01,10,272
+Bebida energetica,2021-11-01,11,261
+Bebida energetica,2021-12-01,12,304
+Bebida energetica,2022-01-01,13,305
+Bebida energetica,2022-02-01,14,319
+Bebida energetica,2022-03-01,15,407
+Bebida energetica,2022-04-01,16,371
+Bebida energetica,2022-05-01,17,410
+Bebida energetica,2022-06-01,18,418
+Bebida energetica,2022-07-01,19,407
+Bebida energetica,2022-08-01,20,444
+Bebida energetica,2022-09-01,21,406
+Bebida energetica,2022-10-01,22,325
+Bebida energetica,2022-11-01,23,330
+Bebida energetica,2022-12-01,24,343
+Bebida energetica,2023-01-01,25,364
+Bebida energetica,2023-02-01,26,349
+Bebida energetica,2023-03-01,27,367
+Bebida energetica,2023-04-01,28,411
+Bebida energetica,2023-05-01,29,478
+Bebida energetica,2023-06-01,30,492
+Bebida energetica,2023-07-01,31,500
+Bebida energetica,2023-08-01,32,460
+Bebida energetica,2023-09-01,33,424
+Bebida energetica,2023-10-01,34,379
+Bebida energetica,2023-11-01,35,407
+Bebida energetica,2023-12-01,36,404
+Bebida energetica,2024-01-01,37,431
+Bebida energetica,2024-02-01,38,458
+Bebida energetica,2024-03-01,39,480
+Bebida energetica,2024-04-01,40,554
+Bebida energetica,2024-05-01,41,558
+Bebida energetica,2024-06-01,42,564
+Bebida energetica,2024-07-01,43,564
+Bebida energetica,2024-08-01,44,541
+Bebida energetica,2024-09-01,45,477
+Bebida energetica,2024-10-01,46,490
+Bebida energetica,2024-11-01,47,468
+Bebida energetica,2024-12-01,48,450
+Bebida energetica,2025-01-01,49,459
+Bebida energetica,2025-02-01,50,516
+Bebida energetica,2025-03-01,51,590
+Bebida energetica,2025-04-01,52,605
+Bebida energetica,2025-05-01,53,632
+Bebida energetica,2025-06-01,54,648
+Bebida energetica,2025-07-01,55,654
+Bebida energetica,2025-08-01,56,605
+Bebida energetica,2025-09-01,57,589
+Bebida energetica,2025-10-01,58,554
+Bebida energetica,2025-11-01,59,562
+Bebida energetica,2025-12-01,60,537

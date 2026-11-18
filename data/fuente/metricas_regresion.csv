@@ -1,0 +1,5 @@
+modelo,mae,rmse,mape_pct,sesgo
+modelo_ols_estacional,34.6,47.0,5.43,-4.4
+base_ingenuo_estacional,53.6,67.4,8.32,-37.0
+base_media_movil_12,86.9,108.2,18.12,-37.0
+base_ingenuo,122.5,156.3,19.85,-108.2

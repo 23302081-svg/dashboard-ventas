@@ -1,0 +1,5 @@
+modelo,particion,tp,tn,fp,fn,exactitud,precision,recall,f1
+naive_bayes,test,29,21,1,9,0.833,0.967,0.763,0.853
+naive_bayes,train,81,70,10,19,0.839,0.89,0.81,0.848
+base_clase_mayoritaria,test,,,,,0.633,,,
+base_clase_mayoritaria,train,,,,,0.556,,,

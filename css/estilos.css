@@ -1,0 +1,26 @@
+:root{--bg:#f6f1e7;--card:#fffdf8;--ink:#1f2a2e;--mut:#6b7479;--line:#e3dccd;--c1:#0f6b6b;--c2:#d9602b;--c3:#c9a227;--c4:#6a4c93;--c5:#8a9a5b;--c6:#b8b0a0;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141b1d;--card:#1c2527;--ink:#ece6d8;--mut:#98a3a7;--line:#2c3739;--c1:#3fb5b0;--c2:#f08a57;--c3:#e0bf4a;--c4:#a98bd6;--c5:#b2c47a;--c6:#7d8588}}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Georgia,'Times New Roman',serif}
+.w{max-width:1080px;margin:0 auto;padding:28px 18px 60px}
+h1{font-size:clamp(26px,5vw,40px);line-height:1.1;margin:0 0 8px;letter-spacing:-.5px}
+h2{font-size:22px;margin:42px 0 4px;border-top:3px solid var(--ink);padding-top:12px}
+.sub,.mut{color:var(--mut)}.sm{font:13px/1.4 system-ui,sans-serif}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:22px 0}
+.k{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
+.k b{display:block;font-size:30px;line-height:1.1;color:var(--c1)}.k span{font:12px system-ui,sans-serif;color:var(--mut)}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:14px;margin-top:12px}
+.c{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:14px}
+.c h3{font:600 14px system-ui,sans-serif;margin:0 0 8px}
+.cv{position:relative;height:270px}
+.ins{border-left:4px solid var(--c2);background:var(--card);padding:10px 14px;margin-top:12px;border-radius:0 6px 6px 0}
+.ins b{font:700 12px system-ui,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--c2);display:block}
+.ins p{margin:4px 0 0}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.tabs button{font:13px system-ui,sans-serif;border:1px solid var(--line);background:var(--bg);color:var(--ink);padding:5px 11px;border-radius:99px;cursor:pointer}
+.tabs button.on{background:var(--c1);border-color:var(--c1);color:#fff}
+.cm{display:grid;grid-template-columns:auto 1fr 1fr;gap:4px;font:13px system-ui,sans-serif;text-align:center;align-items:stretch}
+.cm div{padding:16px 6px;border-radius:4px}.cm .h{padding:4px;color:var(--mut);align-self:center}
+table{border-collapse:collapse;width:100%;font:13px system-ui,sans-serif}td,th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left}
+.tw{overflow-x:auto}

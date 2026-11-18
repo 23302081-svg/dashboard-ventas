@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dashboard: pronóstico y analítica de ventas en SQL</title>
+<link rel="stylesheet" href="css/estilos.css">
+<!-- Chart.js fijado a una versión exacta. Para uso sin internet: npm i chart.js y apuntar a node_modules/chart.js/dist/chart.umd.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head><body><div class="w">
+<p class="sm mut" style="margin:0 0 6px;text-transform:uppercase;letter-spacing:.1em">Caso práctico · 5 productos × 60 meses · todo en SQL</p>
+<h1>Pronóstico y analítica de ventas de tienda</h1>
+<p class="sub">Cuatro modelos construidos únicamente con SQL: regresión, clasificación, reducción de dimensionalidad (PCA) y agrupación (k-means). Datos sintéticos; la metodología es reutilizable con ventas reales.</p>
+<div class="kpis">
+<div class="k"><b>5.43 %</b><span>MAPE del pronóstico (prueba 2025)</span></div>
+<div class="k"><b>−35 %</b><span>error relativo vs. mejor línea base</span></div>
+<div class="k"><b>0.833</b><span>exactitud Naive Bayes (prueba)</span></div>
+<div class="k"><b>82.9 %</b><span>varianza con 3 de 6 componentes</span></div>
+<div class="k"><b>k = 6</b><span>grupos, silueta 0.358</span></div></div>
+
+<h2>1 · Regresión: pronóstico de unidades</h2>
+<p class="sub">Tendencia lineal (OLS) × índice estacional multiplicativo. Entrenado con 2021–2024; probado en 2025.</p>
+<div class="g" style="grid-template-columns:1fr"><div class="c"><h3>Ventas reales vs. modelo, con proyección 2026</h3>
+<div class="tabs" id="tp"></div><div class="cv" style="height:320px"><canvas id="ch1"></canvas></div></div></div>
+<div class="g"><div class="c"><h3>MAPE por modelo, prueba 2025 (%)</h3><div class="cv"><canvas id="ch2"></canvas></div></div>
+<div class="c"><h3>MAPE por producto (%)</h3><div class="cv"><canvas id="ch3"></canvas></div></div></div>
+<div class="ins"><b>Interpretación</b><p>El modelo baja el MAPE de 8.32 % (ingenuo estacional) a 5.43 %, y el MAE de 53.6 a 34.6 unidades. Los modelos que ignoran la estacionalidad rondan 18–20 % de error, así que el calendario es la señal dominante. El helado es el más difícil (7.95 %) porque su estacionalidad es la más intensa: una pequeña desviación del patrón se amplifica. Pan, bebida energética y leche quedan bajo 5 %. La versión refinada (tendencia sobre serie desestacionalizada) corrige el sesgo pero no mejora en prueba (5.60 %), por lo que se conserva el modelo base.</p></div>
+
+<h2>2 · Clasificación: ¿habrá alta demanda?</h2>
+<p class="sub">Naive Bayes con suavizado de Laplace: ¿las ventas del mes superarán el promedio de los 12 meses previos?</p>
+<div class="g"><div class="c"><h3>Matriz de confusión, prueba (60 casos)</h3><div class="cm" id="cm"></div></div>
+<div class="c"><h3>Métricas: Naive Bayes vs. clase mayoritaria</h3><div class="cv"><canvas id="ch4"></canvas></div></div></div>
+<div class="ins"><b>Interpretación</b><p>Con 0.833 de exactitud, el modelo supera con claridad a predecir siempre la clase mayoritaria (0.633). Es conservador: su precisión es 0.967 (solo 1 falsa alarma), pero su recall es 0.763, es decir, deja pasar 9 de 38 meses de alta demanda. Para compras e inventario esto significa que una alerta de «alta demanda» es muy confiable, pero conviene no tomar la ausencia de alerta como garantía. Exactitud similar en entrenamiento (0.839) y prueba indica que no hay sobreajuste notable.</p></div>
+
+<h2>3 · PCA: de 6 variables a 3 componentes</h2>
+<p class="sub">240 observaciones producto-mes, seis variables estandarizadas, componentes calculados por iteración de potencias en SQL.</p>
+<div class="g"><div class="c"><h3>Varianza explicada por componente (%)</h3><div class="cv"><canvas id="ch5"></canvas></div></div>
+<div class="c"><h3>Cargas de cada variable</h3><div class="cv"><canvas id="ch6"></canvas></div></div></div>
+<div class="ins"><b>Interpretación</b><p>Tres componentes retienen 82.9 % de la varianza (error de reconstrucción 0.171 por variable). PC1 mide el nivel de ventas frente a la propia historia del producto, con sesgo a la segunda mitad del año; PC2, el impulso de crecimiento en la primera mitad; PC3, la volatilidad reciente (cv_3m con carga 0.86). Resumir seis indicadores en tres ejes permite agrupar sin que variables redundantes pesen doble.</p></div>
+
+<h2>4 · K-means: regímenes de demanda</h2>
+<p class="sub">Agrupación sobre las 3 componentes; k elegido por máxima silueta.</p>
+<div class="g"><div class="c"><h3>Selección de k: silueta (barras) e inercia (línea)</h3><div class="cv"><canvas id="ch7"></canvas></div></div>
+<div class="c"><h3>Tasa de alta demanda por grupo (%)</h3><div class="cv"><canvas id="ch8"></canvas></div></div></div>
+<div class="g"><div class="c"><h3>Grupos por trimestre (observaciones)</h3><div class="cv"><canvas id="ch9"></canvas></div></div>
+<div class="c"><h3>Perfil de los grupos</h3><div class="tw"><table id="tb"></table></div></div></div>
+<div class="ins"><b>Interpretación</b><p>k = 6 tiene la mayor silueta (0.358), aunque la ventaja sobre k = 5 o k = 2 es pequeña: las ventas varían de forma continua, así que los grupos son regímenes más que segmentos nítidos. Aun así, ordenados por nivel, la tasa de alta demanda sube casi monótonamente de 0 % a 100 % sin que el algoritmo haya visto esa etiqueta, una validación externa razonable. Como el mes entra como variable, el calendario guía parte de los grupos (el grupo 1, caída de fin de temporada, es casi todo del trimestre 4).</p></div>
+
+<h2>Conclusiones</h2>
+<div class="ins"><b>Qué hacer con esto</b><p>Usar el modelo OLS × estacionalidad para planear compras (error esperado ≈ 5 %); apoyarse en las alertas de alta demanda por su alta precisión; y vigilar cada mes el MAPE y el sesgo, revisando cualquier producto que pase de 10 % tres meses seguidos. Limitaciones: datos simulados, solo 12 meses de prueba y sin promociones, precios ni feriados. Las diferencias menores a un punto porcentual entre modelos no son concluyentes.</p></div>
+</div>
+<script src="data/datos.js"></script>
+<script src="js/tema.js"></script>
+<script src="js/graficas/regresion.js"></script>
+<script src="js/graficas/clasificacion.js"></script>
+<script src="js/graficas/pca.js"></script>
+<script src="js/graficas/kmeans.js"></script>
+<script src="js/main.js"></script>
+</body></html>
